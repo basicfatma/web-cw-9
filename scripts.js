@@ -22,3 +22,18 @@
     تتغير الصورة لصورة الشمس
     "يتغير الاسم أسفل الصورة ويصبح "الشمس
 */
+
+function planetcard(){
+let title = document.getElementById('caption');
+let image = document.getElementById('image');
+
+if (title.innerHTML == "القمر") {
+    title.innerHTML = "الشمس";
+    image.src = "./images/sun.jpg"
+    document.body.style.backgroundColor = "#ffa500"
+}else{
+    title.innerHTML = "القمر";
+    image.src = "./images/moon.jpg"
+    document.body.style.backgroundColor = "#182848"
+}
+}
